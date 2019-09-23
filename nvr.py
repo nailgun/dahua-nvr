@@ -107,7 +107,7 @@ class DahuaDevice:
                 ln = 16
             rnd = str(random.random())
             if rnd[len(rnd)-ln: 1] == '0':
-                return a(ln)
+                return gen_password(ln)
             else:
                 return rnd[len(rnd)-ln:]
 
